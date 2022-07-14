@@ -23,7 +23,13 @@ class MyDate{
     this.month = month;
     this.day = day;
   }
+
+  printFormat(): string{
+    let newDateF = this.day.toString()+'/'+this.month.toString()+'/'+this.year.toString();
+    return newDateF;
+  }
+
 }
 
 const myDate = new MyDate(2022,6,13);
-console.log(myDate);
+console.log(myDate.printFormat());
